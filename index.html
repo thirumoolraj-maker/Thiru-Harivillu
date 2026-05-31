@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <title>Harivillu | Royal Indian Heritage & Luxury Silks</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,600;1,400&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Inter', sans-serif; }
+        .brand-serif { font-family: 'Cinzel', serif; }
+        .editorial-font { font-family: 'Playfair Display', serif; }
+        
+        /* Smooth transitions for interactive elements */
+        .megamenu-dropdown {
+            opacity: 0;
+            visibility: hidden;
+            transform: translateY(8px);
+            transition: all 0.25s ease-in-out;
+            pointer-events: none;
+        }
+        .megamenu-trigger:hover .megamenu-dropdown {
+            opacity: 1;
+            visibility: visible;
+            transform: translateY(0);
+            pointer-events: auto;
+        }
+    </style>
+</head>
+<body class="bg-stone-50 text-slate-900 selection:bg-amber-700 selection:text-white">
+
+    <div class="bg-amber-700 text-amber-50 text-[10px] tracking-[0.3em] text-center py-2.5 uppercase font-medium border-b border-amber-600/30">
+        ✨ Free Global Shipping On Curated Masterpieces | Silk Mark Certified Elegance ✨
+    </div>
+
+    <header class="bg-slate-950 text-white shadow-xl sticky top-0 z-50 border-b border-amber-600/20">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex items-center justify-between h-24">
+            
+            <button onclick="toggleMobileMenu(true)" class="md:hidden text-amber-400 hover:text-amber-500 focus:outline-none">
+                <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/></svg>
+            </button>
+
+            <div class="text-center">
+                <a href="#" class="brand-serif text-3xl lg:text-4xl font-semibold tracking-[0.2em] text-amber-500 block">HARIVILLU</a>
+                <span class="text-[9px] tracking-[0.4em] uppercase text-stone-400 block mt-1">The Royal Silhouette</span>
+            </div>
+
+            <nav class="hidden md:flex space-x-10 text-xs font-medium tracking-[0.25em] uppercase text-stone-200 h-full items-center">
+                <div class="relative megamenu-trigger h-full flex items-center cursor-pointer border-b-2 border-transparent hover:border-amber-500 transition-all">
+                    <span class="hover:text-amber-400">Sarees</span>
+                    <div class="absolute left-1/2 -translate-x-1/2 top-full w-[700px] bg-slate-900 border border-amber-600/20 shadow-2xl p-8 grid grid-cols-3 gap-8 megamenu-dropdown z-50">
+                        <div>
+                            <h4 class="brand-serif font-bold text-amber-500 tracking-wider border-b border-amber-600/20 pb-2 mb-3 text-sm normal-case">By Heritage Weaves</h4>
+                            <ul class="space-y-3 text-stone-300 font-light text-xs normal-case tracking-normal">
+                                <li><a href="#" class="hover:text-amber-400 block">Kanchipuram Silk Masterpieces</a></li>
+                                <li><a href="#" class="hover:text-amber-400 block">Banarasi Royal Brocades</a></li>
+                                <li><a href="#" class="hover:text-amber-400 block">Heritage Mysore Crepe</a></li>
+                                <li><a href="#" class="hover:text-amber-400 block">Paithani & Patola Handlooms</a></li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h4 class="brand-serif font-bold text-amber-500 tracking-wider border-b border-amber-600/20 pb-2 mb-3 text-sm normal-case">By Material Luxury</h4>
+                            <ul class="space-y-3 text-stone-300 font-light text-xs normal-case tracking-normal">
+                                <li><a href="#" class="hover:text-amber-400 block">Pure Ethereal Georgette</a></li>
+                                <li><a href="#" class="hover:text-amber-400 block">Raw Tussar & Organic Linen</a></li>
+                                <li><a href="#" class="hover:text-amber-400 block">Sheer Organza & Chiffons</a></li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h4 class="brand-serif font-bold text-amber-500 tracking-wider border-b border-amber-600/20 pb-2 mb-3 text-sm normal-case">Curated Collections</h4>
+                            <ul class="space-y-3 text-stone-300 font-light text-xs normal-case tracking-normal">
+                                <li><a href="#" class="hover:text-amber-400 block">The Royal Bridal Registry</a></li>
+                                <li><a href="#" class="hover:text-amber-400 block">Imperial Festive Edit</a></li>
+                                <li><a href="#" class="hover:text-amber-400 block">Regal Heirloom Classics</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <a href="#" class="border-b-2 border-transparent hover:border-amber-500 hover:text-amber-400 pb-1">Lehengas</a>
+                <a href="#" class="border-b-2 border-transparent hover:border-amber-500 hover:text-amber-400 pb-1">Unstitched Luxury</a>
+                <a href="#" class="border-b-2 border-transparent hover:border-amber-500 text-amber-500 pb-1 font-semibold">Imperial Bridal</a>
+            </nav>
+
+            <div class="flex items-center space-x-6 text-stone-300">
+                <button onclick="toggleSearchOverlay(true)" class="hover:text-amber-400 p-1">
+                    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"/></svg>
+                </button>
+                <button onclick="toggleCartDrawer(true)" class="hover:text-amber-400 p-1 relative">
+                    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 11V7a4 4 0 00-8 0v4M5 9h14l1 12H4L5 9z"/></svg>
+                    <span id="cart-counter" class="absolute top-0 right-0 inline-flex items-center justify-center px-1.5 py-0.5 text-[9px] font-bold leading-none text-slate-950 bg-amber-500 rounded-full transform translate-x-1/2 -translate-y-1/2">0</span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <section class="relative bg-slate-900 h-[70vh] overflow-hidden flex items-center">
+        <img src="https://images.unsplash.com/photo-1610030469983-98e550d6193c?auto=format&fit=crop&w=1600&q=80" alt="Royal Weaves" class="absolute inset-0 w-full h-full object-cover opacity-40 object-center mix-blend-luminosity">
+        <div class="absolute inset-0 bg-gradient-to-r from-slate-950 via-slate-900/60 to-transparent"></div>
+        <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-white w-full">
+            <p class="text-xs tracking-[0.5em] uppercase text-amber-500 mb-3 font-semibold">The Sovereign Handloom Collection</p>
+            <h1 class="brand-serif text-4xl sm:text-6xl font-medium tracking-wide max-w-2xl mb-6 leading-tight">Heirloom Silks <br><span class="editorial-font italic font-light text-amber-100 normal-case">Woven for Royalty</span></h1>
+            <p class="text-stone-300 text-sm max-w-md font-light tracking-wide leading-relaxed mb-8">Discover exceptional luxury hand-woven by master craftsmen, featuring authentic pure zari threads and certified pure mulberry silk.</p>
+            <a href="#atelier-grid" class="inline-block bg-amber-700 hover:bg-amber-800 text-white text-xs tracking-[0.25em] uppercase font-semibold px-10 py-4 shadow-xl transition-all">Explore the Atelier</a>
+        </div>
+    </section>
+
+    <section id="atelier-grid" class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
+        <div class="text-center mb-16">
+            <h2 class="brand-serif text-3xl font-medium tracking-widest text-slate-900">The Royal Catalog</h2>
+            <p class="editorial-font italic text-stone-500 mt-2 text-sm">Finest craftsmanship handpicked for your trousseau</p>
+            <div class="w-16 h-[1px] bg-amber-600/50 mx-auto mt-4"></div>
+        </div>
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10">
+            <div class="bg-white group overflow-hidden border border-stone-200 shadow-sm flex flex-col justify-between">
+                <div class="relative overflow-hidden aspect-[3/4] bg-stone-100">
+                    <img src="https://images.unsplash.com/photo-1617627143750-d86bc21e42bb?auto=format&fit=crop&w=600&q=80" alt="Saree" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                    <span class="absolute top-4 left-4 bg-amber-600 text-white text-[9px] font-bold tracking-widest uppercase px-3 py-1">Best Seller</span>
+                </div>
+                <div class="p-6 text-center">
+                    <p class="text-[10px] tracking-widest uppercase text-amber-700 font-semibold mb-1">Kanchipuram Silk</p>
+                    <h3 class="brand-serif text-lg font-medium text-slate-900 mb-2">Imperial Crimson Brocade</h3>
+                    <p class="text-stone-600 font-mono text-sm mb-4">₹48,500</p>
+                    <button onclick="addToTrousseau('Imperial Crimson Brocade')" class="w-full bg-slate-950 text-white hover:bg-amber-700 transition-colors text-xs font-semibold uppercase tracking-widest py-3">Add to Trousseau</button>
+                </div>
+            </div>
+
+            <div class="bg-white group overflow-hidden border border-stone-200 shadow-sm flex flex-col justify-between">
+                <div class="relative overflow-hidden aspect-[3/4] bg-stone-100">
+                    <img src="https://images.unsplash.com/photo-1583391733956-3750e0ff4e8b?auto=format&fit=crop&w=600&q=80" alt="Saree" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                    <span class="absolute top-4 left-4 bg-slate-900 text-white text-[9px] font-bold tracking-widest uppercase px-3 py-1">Pure Zari</span>
+                </div>
+                <div class="p-6 text-center">
+                    <p class="text-[10px] tracking-widest uppercase text-amber-700 font-semibold mb-1">Banarasi Handloom</p>
+                    <h3 class="brand-serif text-lg font-medium text-slate-900 mb-2">Midnight Shikargah Katan</h3>
+                    <p class="text-stone-600 font-mono text-sm mb-4">₹62,000</p>
+                    <button onclick="addToTrousseau('Midnight Shikargah Katan')" class="w-full bg-slate-950 text-white hover:bg-amber-700 transition-colors text-xs font-semibold uppercase tracking-widest py-3">Add to Trousseau</button>
+                </div>
+            </div>
+
+            <div class="bg-white group overflow-hidden border border-stone-200 shadow-sm flex flex-col justify-between">
+                <div class="relative overflow-hidden aspect-[3/4] bg-stone-100">
+                    <img src="https://images.unsplash.com/photo-1609357605129-26f69add5d6e?auto=format&fit=crop&w=600&q=80" alt="Saree" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                </div>
+                <div class="p-6 text-center">
+                    <p class="text-[10px] tracking-widest uppercase text-amber-700 font-semibold mb-1">Mysore Silk Crepe</p>
+                    <h3 class="brand-serif text-lg font-medium text-slate-900 mb-2">Royal Emerald Kasuti</h3>
+                    <p class="text-stone-600 font-mono text-sm mb-4">₹24,900</p>
+                    <button onclick="addToTrousseau('Royal Emerald Kasuti')" class="w-full bg-slate-950 text-white hover:bg-amber-700 transition-colors text-xs font-semibold uppercase tracking-widest py-3">Add to Trousseau</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div id="search-overlay" class="fixed inset-0 bg-slate-950/80 backdrop-blur-sm z-[100] hidden items-center justify-center p-4">
+        <div class="bg-white w-full max-w-2xl p-8 rounded-lg shadow-2xl relative">
+            <button onclick="toggleSearchOverlay(false)" class="absolute top-4 right-4 text-slate-400 hover:text-slate-600">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/></svg>
+            </button>
+            <h3 class="brand-serif text-xl mb-4 text-slate-900">Search the Royal Vault</h3>
+            <div class="flex gap-2">
+                <input type="text" placeholder="Search Kanchipuram, Banarasi, Silk..." class="w-full border border-stone-300 px-4 py-3 rounded focus:outline-none focus:border-amber-700 font-light">
+                <button class="bg-amber-700 text-white px-6 py-3 uppercase tracking-wider text-xs font-semibold hover:bg-amber-800">Find</button>
+            </div>
+        </div>
+    </div>
+
+    <div id="cart-drawer" class="fixed inset-0 z-[100] hidden">
+        <div class="absolute inset-0 bg-black/50 backdrop-blur-xs" onclick="toggleCartDrawer(false)"></div>
+        <div class="absolute right-0 top-0 h-full w-full max-w-md bg-white shadow-2xl flex flex-col p-6">
+            <div class="flex justify-between items-center border-b border-stone-200 pb-4 mb-4">
+                <h3 class="brand-serif text-xl text-slate-900">Your Trousseau</h3>
+                <button onclick="toggleCartDrawer(false)" class="text-slate-400 hover:text-slate-600">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/></svg>
+                </button>
+            </div>
+            <div id="cart-items-container" class="flex-1 overflow-y-auto space-y-4 text-sm text-stone-500 font-light">
+                Your cart is currently empty of curated handlooms.
+            </div>
+            <div class="border-t border-stone-200 pt-4 mt-4">
+                <button onclick="alert('Proceeding to billing server gateway...')" class="w-full bg-amber-700 hover:bg-amber-800 text-white text-center py-4 text-xs tracking-widest font-bold uppercase">Proceed to Checkout</button>
+            </div>
+        </div>
+    </div>
+
+    <div id="mobile-menu" class="fixed inset-0 z-[100] hidden">
+        <div class="absolute inset-0 bg-black/50" onclick="toggleMobileMenu(false)"></div>
+        <div class="absolute left-0 top-0 h-full w-4/5 max-w-xs bg-slate-950 p-6 flex flex-col text-white">
+            <div class="flex justify-between items-center mb-8">
+                <span class="brand-serif text-xl tracking-wider text-amber-500">HARIVILLU</span>
+                <button onclick="toggleMobileMenu(false)" class="text-stone-400">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/></svg>
+                </button>
+            </div>
+            <nav class="flex flex-col space-y-6 text-sm uppercase tracking-widest font-light">
+                <a href="#" class="hover:text-amber-400">Kanchipuram Silks</a>
+                <a href="#" class="hover:text-amber-400">Banarasi Brocades</a>
+                <a href="#" class="hover:text-amber-400">Mysore Crepe</a>
+                <a href="#" class="hover:text-amber-400">Lehengas</a>
+                <a href="#" class="hover:text-amber-400 text-amber-500 font-medium">Bridal Custom Vault</a>
+            </nav>
+        </div>
+    </div>
+
+    <footer class="bg-slate-950 text-stone-400 text-center py-12 border-t border-amber-600/10 text-xs tracking-widest font-light">
+        <p class="brand-serif text-amber-500 text-lg tracking-widest mb-2">HARIVILLU ATELIER</p>
+        <p class="mb-4">Preserving Pure Zari Weaving Heritage & Handloom Legacy</p>
+        <p class="text-[10px] text-stone-600">&copy; 2026 Harivillu. All Rights Reserved.</p>
+    </footer>
+
+    <script>
+        let trousseauCart = [];
+
+        function toggleSearchOverlay(show) {
+            document.getElementById('search-overlay').style.display = show ? 'flex' : 'none';
+        }
+
+        function toggleCartDrawer(show) {
+            document.getElementById('cart-drawer').style.display = show ? 'block' : 'none';
+            renderCart();
+        }
+
+        function toggleMobileMenu(show) {
+            document.getElementById('mobile-menu').style.display = show ? 'block' : 'none';
+        }
+
+        function addToTrousseau(itemName) {
+            trousseauCart.push(itemName);
+            document.getElementById('cart-counter').innerText = trousseauCart.length;
+            
+            // Visual alert notification bounce
+            alert(`✨ ${itemName} has been added to your Trousseau cart selection successfully!`);
+        }
+
+        function renderCart() {
+            const container = document.getElementById('cart-items-container');
+            if (trousseauCart.length === 0) {
+                container.innerHTML = "Your cart is currently empty of curated masterworks.";
+                return;
+            }
+            
+            let html = '<ul class="space-y-3">';
+            trousseauCart.forEach((item, index) => {
+                html += `
+                    <li class="flex justify-between items-center bg-stone-50 p-3 border border-stone-200 text-slate-900 font-medium">
+                        <span>👑 ${item}</span>
+                        <button onclick="removeFromCart(${index})" class="text-xs text-red-600 font-semibold tracking-normal uppercase hover:underline">Remove</button>
+                    </li>`;
+            });
+            html += '</ul>';
+            container.innerHTML = html;
+        }
+
+        function removeFromCart(index) {
+            trousseauCart.splice(index, 1);
+            document.getElementById('cart-counter').innerText = trousseauCart.length;
+            renderCart();
+        }
+    </script>
+</body>
+</html>
